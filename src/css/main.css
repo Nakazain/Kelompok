@@ -1,0 +1,27 @@
+.masonry {
+    column-count: 3;
+    column-gap: 16px;
+  }
+
+  .masonry img {
+    width: 100%;
+    margin-bottom: 16px;
+    border-radius: 12px;
+    transition: transform 0.3s ease;
+  }
+
+  .masonry img:hover {
+    transform: scale(1.05);
+  }
+
+  @media (max-width: 768px) {
+    .masonry {
+      column-count: 2;
+    }
+  }
+
+  @media (max-width: 480px) {
+    .masonry {
+      column-count: 1;
+    }
+  }
