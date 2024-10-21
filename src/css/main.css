@@ -25,3 +25,49 @@
       column-count: 1;
     }
   }
+  
+  .no-scrollbar::-webkit-scrollbar {
+    display: none;
+  }
+
+  .no-scrollbar {
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+  }
+
+  #slider {
+    scroll-behavior: smooth;
+  }
+
+    /* Atur kontainer slider agar hanya memperlihatkan bagian dalamnya */
+    .slider-wrapper {
+      overflow: hidden;
+      white-space: nowrap;
+      width: 100%; /* Penuh layar */
+      position: relative;
+      height: 200px; /* Sesuaikan dengan gambar */
+    }
+
+    /* Buat konten bergulir secara horizontal */
+    .slider-content {
+      display: inline-flex;
+      align-items: center;
+      animation: scroll 10s linear infinite;
+    }
+
+    /* Animasi scroll halus */
+    @keyframes scroll {
+      from {
+        transform: translateX(0);
+      }
+      to {
+        transform: translateX(-100%);
+      }
+    }
+
+    /* Pastikan setiap gambar tidak ada gap */
+    .slider-item {
+      flex-shrink: 0;
+      width: 300px; /* Lebar gambar */
+      margin-right: 16px;
+    }  

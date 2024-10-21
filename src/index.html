@@ -3,6 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Ustad</title>
   <link href="./output.css" rel="stylesheet">
   <link rel="stylesheet" href="/src/css/main.css">
 </head>
@@ -41,6 +42,7 @@
       </div>
     </div>
   </nav>
+
   <div class="md:flex lg:grid grid-cols-2 gap-2 mx-60 mt-20">
     <div>
     <img src="img/foto.jpeg" class="rounded-md" width="200" height="w-auto" alt="">
@@ -53,65 +55,60 @@
   </div>
    <p class="text-center font-bold text-5xl mt-28">Kegiatan</p>
 
+   <div id="carouselExample" class="relative w-full lg:w-10/12 mx-auto mt-12" data-carousel="slide">
+    <!-- Carousel Wrapper -->
+    <div class="relative overflow-hidden rounded-lg h-64 bg-lime-300 md:h-96">
 
-   <div id="achievement-carousel" class="relative w-auto mx-36 mt-7" data-carousel="static">
-    <!-- Carousel wrapper -->
-    <div class="relative h-56 overflow-hidden rounded-lg md:h-96">
-      <!-- Item 1 -->
-      <div class="grid grid-cols-2 items-center bg-lime-300 duration-1000 ease-in-out" data-carousel-item>
-        <div class="h-full flex items-center justify-center">
-          <img src="/src/img/gambar-dekoratif-2.jpeg" class="rounded-md w-auto h-72" alt="Achievement Image">
+      <!-- Slide 1 -->
+      <div class="grid grid-cols-1 md:grid-cols-2 items-center duration-1000 ease-in-out" data-carousel-item>
+        <div class="flex justify-center">
+          <img src="https://via.placeholder.com/400x300.png?text=Image+1" alt="Image 1" class="rounded-md w-auto h-56 md:h-80">
         </div>
-        <div class="flex flex-col justify-center p-4">
+        <div class="p-6">
           <h2 class="text-2xl font-bold mb-4">Nama Kegiatan</h2>
-          <p class="text-lg">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
-          </p>
+          <p class="text-lg">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.</p>
         </div>
-      </div>     
-
-      <!-- Item 2 -->
-      <div class="grid grid-cols-2 items-center bg-lime-300 duration-1000 ease-in-out" data-carousel-item>
-        <div class="h-full flex items-center justify-center">
-          <img src="/src/img/gambar-dekoratif-2.jpeg" class="rounded-md w-auto h-72" alt="Achievement Image">
-        </div>
-        <div class="flex flex-col justify-center p-4">
-          <h2 class="text-2xl font-bold mb-4">Nama Kegiatan</h2>
-          <p class="text-lg">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
-          </p>
-        </div>
-      </div>     
-
-      <!-- Item 3 -->
-      <div class="grid grid-cols-2 items-center bg-lime-300 duration-1000 ease-in-out" data-carousel-item>
-        <div class="h-full flex items-center justify-center">
-          <img src="/src/img/gambar-dekoratif-2.jpeg" class="rounded-md w-auto h-72" alt="Achievement Image">
-        </div>
-        <div class="flex flex-col justify-center p-4">
-          <h2 class="text-2xl font-bold mb-4">Nama Keigatan</h2>
-          <p class="text-lg">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
-          </p>
-        </div>
-      </div>          
       </div>
 
-      <!-- Slider indicators -->
-      <div class="absolute z-30 flex -translate-x-1/2 bottom-5 left-1/2 space-x-3 rtl:space-x-reverse">
-          <button type="button" class="w-3 h-3 rounded-full" aria-current="true" aria-label="Slide 1" data-carousel-slide-to="0"></button>
-          <button type="button" class="w-3 h-3 rounded-full" aria-current="false" aria-label="Slide 2" data-carousel-slide-to="1"></button>
-          <button type="button" class="w-3 h-3 rounded-full" aria-current="false" aria-label="Slide 3" data-carousel-slide-to="2"></button>
+      <!-- Slide 2 -->
+      <div class="grid grid-cols-1 md:grid-cols-2 items-center duration-1000 ease-in-out" data-carousel-item>
+        <div class="flex justify-center">
+          <img src="https://via.placeholder.com/400x300.png?text=Image+2" alt="Image 2" class="rounded-md w-auto h-56 md:h-80">
+        </div>
+        <div class="p-6">
+          <h2 class="text-2xl font-bold mb-4">Nama Kegiatan</h2>
+          <p class="text-lg">Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam.</p>
+        </div>
       </div>
+
+      <!-- Slide 3 -->
+      <div class="grid grid-cols-1 md:grid-cols-2 items-center duration-1000 ease-in-out" data-carousel-item>
+        <div class="flex justify-center">
+          <img src="https://via.placeholder.com/400x300.png?text=Image+3" alt="Image 3" class="rounded-md w-auto h-56 md:h-80">
+        </div>
+        <div class="p-6">
+          <h2 class="text-2xl font-bold mb-4">Nama Kegiatan</h2>
+          <p class="text-lg">At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti.</p>
+        </div>
+      </div>
+
+    </div>
+
+    <!-- Indicators -->
+    <div class="absolute z-30 flex space-x-3 -translate-x-1/2 bottom-5 left-1/2">
+      <button type="button" class="w-3 h-3 rounded-full bg-white" aria-current="true" aria-label="Slide 1" data-carousel-slide-to="0"></button>
+      <button type="button" class="w-3 h-3 rounded-full bg-white" aria-current="false" aria-label="Slide 2" data-carousel-slide-to="1"></button>
+      <button type="button" class="w-3 h-3 rounded-full bg-white" aria-current="false" aria-label="Slide 3" data-carousel-slide-to="2"></button>
+    </div>
 
       <!-- Slider controls -->
-      <button type="button" class="absolute top-1/2 -left-16 z-30 flex items-center justify-center w-14 h-28 rounded-full bg-lime-300 hover:bg-yellow-500 group focus:ring-4 focus:ring-yellow-300 transform -translate-y-1/2" data-carousel-prev>
+      <button type="button" class="absolute top-1/2 lg:-left-16 left-4 z-30 flex items-center justify-center w-14 h-28 rounded-full bg-lime-300 hover:bg-yellow-500 group focus:ring-4 focus:ring-yellow-300 transform -translate-y-1/2" data-carousel-prev>
         <svg aria-hidden="true" class="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
           <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7"></path>
         </svg>
         <span class="sr-only">Previous</span>
       </button>
-      <button type="button" class="absolute top-1/2 -right-16 z-30 flex items-center justify-center w-14 h-28 rounded-full bg-lime-300 hover:bg-yellow-500 group focus:ring-4 focus:ring-yellow-300 transform -translate-y-1/2" data-carousel-next>
+      <button type="button" class="absolute top-1/2 lg:-right-16 right-4 z-30 flex items-center justify-center w-14 h-28 rounded-full bg-lime-300 hover:bg-yellow-500 group focus:ring-4 focus:ring-yellow-300 transform -translate-y-1/2" data-carousel-next>
         <svg aria-hidden="true" class="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
           <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path>
         </svg>
@@ -120,10 +117,17 @@
     </div>
 
     <p class="text-center font-bold text-5xl mt-28 mb-10">Galeri</p>
-    <div class="masonry mx-36">
-          <img src="https://images.unsplash.com/photo-1604999565976-8913ad2ddb7c?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=320&h=160&q=80" />
-          <img src="https://images.unsplash.com/photo-1540206351-d6465b3ac5c1?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=320&h=160&q=80" />
-          <img src="https://images.unsplash.com/photo-1622890806166-111d7f6c7c97?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=320&h=160&q=80" />
+      <div class="relative w-full snap-x overflow-x-auto no-scrollbar">
+        <div class="flex space-x-4 p-4">
+          <img src="https://via.placeholder.com/500x300.png?text=Gambar+1" 
+               class="rounded-xl snap-center w-96" alt="Gambar 1">
+          <img src="https://via.placeholder.com/500x300.png?text=Gambar+2" 
+               class="rounded-xl snap-center w-96" alt="Gambar 2">
+          <img src="https://via.placeholder.com/500x300.png?text=Gambar+3" 
+               class="rounded-xl snap-center w-96" alt="Gambar 3">
+          <img src="https://via.placeholder.com/500x300.png?text=Gambar+4" 
+               class="rounded-xl snap-center w-96" alt="Gambar 4">
+      </div>
     </div>
 
     <!-- Footer -->
@@ -144,11 +148,6 @@
           Copyright © 2024
       </text>
   </svg>
-    
-    
-    
-    
-    
 
   <script src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/1.6.5/flowbite.min.js"></script>
 </body>
