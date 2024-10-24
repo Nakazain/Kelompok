@@ -65,9 +65,12 @@
       }
     }
 
-    /* Pastikan setiap gambar tidak ada gap */
     .slider-item {
       flex-shrink: 0;
       width: 300px; /* Lebar gambar */
       margin-right: 16px;
     }  
+
+    .h-cus {
+      height: 34rem;
+    }
