@@ -1,13 +1,21 @@
 <html lang="en">
 <head>
+  
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Materi</title>
+
+    <!-- Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+
+    <!-- CSS -->
     <link href="./output.css" rel="stylesheet">
     <link rel="stylesheet" href="/src/css/main.css">
 </head>
 <body>
-    <nav class="sticky top-0 z-50 bg-opacity-50 backdrop-blur-sm border-gray-200 dark:bg-gray-900">
+    <nav class="sticky top-0 z-50 bg-opacity-50 backdrop-blur-sm border-gray-200 dark:bg-gray-900 border-b-2">
         <div class="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4">
           <a href="https://flowbite.com/" class="flex items-center space-x-3 rtl:space-x-reverse">
               <span class="self-center text-2xl font-semibold whitespace-nowrap dark:text-white">Logo</span>
@@ -37,9 +45,15 @@
         </div>
       </nav>
 
-      <div class="grid lg:grid-cols-2 gap-2 lg:mx-60 mx-20 md:mx-40 mt-20">
-        <div>01</div>
-        <div>02</div>
+      <div class="grid lg:justify-items-end justify-items-center lg:grid-cols-2 lg:gap-2 gap-5 lg:mx-40 mx-20 md:mx-32 mt-20">
+        <div class="lg:order-first order-last">
+          <p class="md:text-2xl text-xl font-medium">Judul Materi</p>
+          <p class="mt-3 md:text-xl">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Non, architecto? Corrupti accusantium similique explicabo incidunt aperiam architecto, dignissimos nisi reprehenderit fugit, hic quidem deleniti id sed dolore consequatur eaque officiis.</p>
+        </div>
+        <div>          
+          <img src="https://via.placeholder.com/500x300.png?text=Gambar+1" 
+          class="rounded-xl snap-start h-40" alt="Gambar 1">
+        </div>
       </div>
 
       <script src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/1.6.5/flowbite.min.js"></script>
