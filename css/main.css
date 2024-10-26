@@ -4,7 +4,11 @@
     font-style: normal;
   }
 
-.masonry {
+  .nav-link.active {
+    color: #cddc39;
+  }
+
+  .masonry {
     column-count: 4;
     column-gap: 16px;
   }
