@@ -2,10 +2,8 @@
     font-family: "Poppins", serif;
     font-weight: 400;
     font-style: normal;
-  }
-
-  .nav-link.active {
-    color: #cddc39;
+    color: #4F4F4F;
+    background-color: #FFFFFF;
   }
 
   .masonry {
